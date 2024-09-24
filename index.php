@@ -9,10 +9,13 @@
 <body>
     <?php
     $numbers = [];
+
+    // * BOUCLE FOR
     // for ($i = 0; $i < 15; $i++) {
     //     $numbers[] = rand(0, 300);
     // }
 
+    // * BOUCLE WHILE
     $i = 0;
     while ($i < 15) {
         $numbers[] = rand(0, 300);
@@ -25,12 +28,14 @@
             <?php 
                 foreach ($numbers as $number) {
 
+                    // * OPTION 1
                     echo '<li';
                     if ($number > 200) {
                         echo ' class="rouge"';
                     }
                     echo '>' . $number . '</li>';
 
+                    // * OPTION 2
                     // if ($number > 200) {
                     //     echo '<li class="rouge">' . $number . '</li>';
                     // } else {
